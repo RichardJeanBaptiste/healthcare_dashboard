@@ -25,9 +25,6 @@ export default function Brain_Map() {
         map_mini: {
             display:'flex',
             flexDirection: 'column',
-            borderStyle: 'solid',
-            borderWidth: '1px',
-            borderRadius: '20px',
             width: '18%',
             height: '77%',
             position: 'absolute',
@@ -42,9 +39,38 @@ export default function Brain_Map() {
             width: '68%',
             height: '25%',
             paddingBottom: '2%',
-            marginLeft: '13%',
+            marginLeft: '3%',
             marginTop: '9%'
         },
+        map_large : {
+            width: '65%',
+            height: '70%',
+            borderStyle: 'solid',
+            borderWidth: '1px',
+            borderRadius: '20px',
+            color: 'white',
+            position: 'absolute',
+            top: '20%',
+            left: '22%'
+        },
+        heat_meter: {
+            width: '1.5%',
+            height: '70%',
+            borderStyle: 'solid',
+            borderRadius: '20px',
+            color: 'white',
+            position: 'absolute',
+            top: '19%',
+            left: '95%'
+        },
+        heat_meter_readings: {
+            display: 'flex',
+            flexDirection: 'column',
+            width: 'inherit',
+            height: '100%',
+            gap: '40px',
+            marginLeft: '-2%'
+        }
     }
 
     return (
@@ -56,15 +82,20 @@ export default function Brain_Map() {
                     <Box sx={Styles.map_mini_image}>b</Box>
                     <Box sx={Styles.map_mini_image}>c</Box>
                 </Box>
+
+                <Box sx={Styles.map_large}>
+                    
+                </Box>
+
+                <Box>
+                    
+                </Box>
+
+                <Box sx={Styles.heat_meter}>
+                    
+                </Box>
+
             </Box>
         </Box>
     )
 }
-
-/**
- * <Stack direction="column" spacing={3} sx={Styles.map_mini}>
-                    <Box sx={Styles.map_mini_image}>a</Box>
-                    <Box sx={Styles.map_mini_image}>b</Box>
-                    <Box sx={Styles.map_mini_image}>c</Box>
-                </Stack>
- */
