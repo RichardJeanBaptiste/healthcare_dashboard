@@ -43,34 +43,42 @@ export default function Brain_Map() {
             marginTop: '9%'
         },
         map_large : {
-            width: '65%',
-            height: '70%',
+            width: '66%',
+            height: '69%',
             borderStyle: 'solid',
             borderWidth: '1px',
             borderRadius: '20px',
             color: 'white',
             position: 'absolute',
-            top: '20%',
-            left: '22%'
+            top: '18%',
+            left: '18%'
         },
         heat_meter: {
-            width: '1.5%',
-            height: '70%',
-            borderStyle: 'solid',
-            borderRadius: '20px',
+            width: '11.5%',
+            height: '69%',
             color: 'white',
             position: 'absolute',
-            top: '19%',
-            left: '95%'
+            top: '18%',
+            left: '87%',
+            display: 'flex',
+            flexDirection: 'row'
         },
         heat_meter_readings: {
             display: 'flex',
             flexDirection: 'column',
-            width: 'inherit',
             height: '100%',
-            gap: '40px',
-            marginLeft: '-2%'
+            gap: '35%'
+        },
+        heat_meter_colors: {
+            width: '10%',
+            height: '92%',
+            color:'white',
+            borderStyle: 'solid',
+            borderRadius: '20px',
+            borderWidth: '.5px',
+            marginLeft: '16%'
         }
+
     }
 
     return (
@@ -78,21 +86,22 @@ export default function Brain_Map() {
             <Box sx={Styles.map_container}>
                 <Typography component='p' sx={Styles.title}>Brain Mapping</Typography>
                 <Box sx={Styles.map_mini}>
-                    <Box sx={Styles.map_mini_image}>a</Box>
-                    <Box sx={Styles.map_mini_image}>b</Box>
-                    <Box sx={Styles.map_mini_image}>c</Box>
+                    <Box sx={Styles.map_mini_image}></Box>
+                    <Box sx={Styles.map_mini_image}></Box>
+                    <Box sx={Styles.map_mini_image}></Box>
                 </Box>
 
                 <Box sx={Styles.map_large}>
                     
                 </Box>
 
-                <Box>
-                    
-                </Box>
-
                 <Box sx={Styles.heat_meter}>
-                    
+                    <Box sx={Styles.heat_meter_readings}>
+                        <Typography component='p'>0.50 - </Typography>
+                        <Typography component='p'>0.25 - </Typography>
+                        <Typography component='p'>0.1 - </Typography>
+                    </Box>
+                    <Box sx={Styles.heat_meter_colors}></Box>
                 </Box>
 
             </Box>

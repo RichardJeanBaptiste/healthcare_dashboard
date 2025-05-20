@@ -2,14 +2,82 @@
 import Box from '@mui/material/Box';
 import Header from './components/Header';
 import Brain_Map from './components/Brain_Map';
+import AI_Analytics from './components/AI_Analytics';
+import Next_Steps from './components/Next_Steps';
+import Index from './components/Index';
 
 function App() {
   //const [count, setCount] = useState(0);
+
+  const Styles = {
+    box1: {
+      position: 'absolute',
+      top: '67%',
+      left: '2%',
+      width: '28%',
+      height: '19%',
+      borderStyle: 'solid',
+      borderWidth: '1px',
+      borderColor: 'black',
+      borderRadius: '20px'
+    },
+    box2: {
+      position: 'absolute',
+      top: '67%',
+      left: '31%',
+      width: '28%',
+      height: '19%',
+      borderStyle: 'solid',
+      borderWidth: '1px',
+      borderColor: 'black',
+      borderRadius: '20px'
+    },
+    box3: {
+      position: 'absolute',
+      top: '88%',
+      left: '2%',
+      width: '28%',
+      height: '19%',
+      borderStyle: 'solid',
+      borderWidth: '1px',
+      borderColor: 'black',
+      borderRadius: '20px'
+    },
+    box4: {
+      position: 'absolute',
+      top: '88%',
+      left: '31%',
+      width: '28%',
+      height: '19%',
+      borderStyle: 'solid',
+      borderWidth: '1px',
+      borderColor: 'black',
+      borderRadius: '20px'
+    }
+  }
 
   return (
     <Box sx={{ width: '100vw', height: '100vh', position: 'relative' }}>
       <Header/>
       <Brain_Map/>
+      <AI_Analytics/>
+      <Next_Steps/>
+
+      <Box sx={Styles.box1}>
+        <Index/>
+      </Box>
+      
+      <Box sx={Styles.box2}>
+        <Index/>
+      </Box>
+      
+      <Box sx={Styles.box3}>
+        <Index/>
+      </Box>
+      
+      <Box sx={Styles.box4}>
+        <Index/>
+      </Box>
     </Box>
   )
 }
