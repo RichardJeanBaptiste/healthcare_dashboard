@@ -71,12 +71,13 @@ export default function Brain_Map() {
         },
         heat_meter_colors: {
             width: '10%',
-            height: '92%',
+            height: '98%',
             color:'white',
             borderStyle: 'solid',
             borderRadius: '20px',
             borderWidth: '.5px',
-            marginLeft: '16%'
+            marginLeft: '16%',
+            background: 'linear-gradient(to bottom, red, orange, yellow)',
         }
 
     }
