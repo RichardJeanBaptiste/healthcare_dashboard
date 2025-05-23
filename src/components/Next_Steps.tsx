@@ -105,9 +105,6 @@ export default function Next_Steps() {
                         return <li style={{ color: 'lightgrey'}}><Typography component="p" variant="subtitle2" sx={{color: 'black' }}>{x}</Typography></li>
                     })}
                 </ul>
-
-                <br/>
-                <br/>
             </Box>
         )
     }

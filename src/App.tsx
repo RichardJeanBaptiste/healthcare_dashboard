@@ -7,8 +7,6 @@ import Next_Steps from './components/Next_Steps';
 import Index from './components/Index';
 
 function App() {
-  //const [count, setCount] = useState(0);
-
   const Styles = {
     box1: {
       position: 'absolute',
