@@ -74,7 +74,7 @@ export default function AI_Analytics() {
         <Box sx={Styles.root}>
             <Box sx={{ width: '100%', height: '100%', position: 'relative'}}>
                 <Typography component='p' sx={Styles.title}>AI Analytics Insights</Typography>
-                <Box sx={Styles.date_picker}>date picker</Box>
+                
                 {/** -------------------- */}
                 <Box sx={Styles.neuro_risk}>
                     <Typography component='h2' variant="h6" >Neurodegenerative Risk</Typography>

@@ -1,4 +1,8 @@
 import { Box, Typography } from "@mui/material";
+import B_Large from "../assets/brain scan large.png";
+import B_Profile from "../assets/brain scan profile.png";
+import B_Side from "../assets/brain scan overhead.png";
+import B_Side2 from "../assets/Brain scan overhead 2.png";
 
 export default function Brain_Map() {
     const Styles = {
@@ -45,10 +49,6 @@ export default function Brain_Map() {
         map_large : {
             width: '66%',
             height: '69%',
-            borderStyle: 'solid',
-            borderWidth: '1px',
-            borderRadius: '20px',
-            color: 'white',
             position: 'absolute',
             top: '18%',
             left: '18%'
@@ -78,6 +78,17 @@ export default function Brain_Map() {
             borderWidth: '.5px',
             marginLeft: '16%',
             background: 'linear-gradient(to bottom, red, orange, yellow)',
+        },
+        brain_img_large: {
+            width: '70%',
+            height: '98%',
+            marginTop: '-4%',
+            marginLeft: '13%'
+        },
+        brain_img_small: {
+            width: '98%',
+            height: '102%',
+            borderRadius: '20px'
         }
 
     }
@@ -87,13 +98,19 @@ export default function Brain_Map() {
             <Box sx={Styles.map_container}>
                 <Typography component='p' sx={Styles.title}>Brain Mapping</Typography>
                 <Box sx={Styles.map_mini}>
-                    <Box sx={Styles.map_mini_image}></Box>
-                    <Box sx={Styles.map_mini_image}></Box>
-                    <Box sx={Styles.map_mini_image}></Box>
+                    <Box sx={Styles.map_mini_image}>
+                        <Box component="img" src={B_Profile} sx={Styles.brain_img_small} />
+                    </Box>
+                    <Box sx={Styles.map_mini_image}>
+                        <Box component="img" src={B_Side} sx={Styles.brain_img_small}/>
+                    </Box>
+                    <Box sx={Styles.map_mini_image}>
+                        <Box component="img" src={B_Side2} sx={Styles.brain_img_small}/>
+                    </Box>
                 </Box>
 
                 <Box sx={Styles.map_large}>
-                    
+                    <Box component="img" src={B_Large} sx={Styles.brain_img_large}/>
                 </Box>
 
                 <Box sx={Styles.heat_meter}>

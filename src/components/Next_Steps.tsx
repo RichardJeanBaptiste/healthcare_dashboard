@@ -54,8 +54,9 @@ export default function Next_Steps() {
             position: 'relative',
             '& ul': {
                 position: 'absolute',
-                top: '2%',
-                right: '35%'
+                top: '-15%',
+                right: '7%',
+                width: '40%'
             },
         },
         unit_title: {
@@ -67,6 +68,14 @@ export default function Next_Steps() {
         },
         unit_icon: {
 
+        },
+        date_background: {
+            width: '30%',
+            height: '30%',
+            borderStyle:'solid',
+            borderColor: 'lightgrey',
+            borderWidth: '.5px',
+            borderRadius: '20px'
         }
 
     }
@@ -86,7 +95,9 @@ export default function Next_Steps() {
                 <Box sx={Styles.unit_title}>
                     {icon}
                     <Typography variant="body2" >{title}</Typography>
-                    <Typography component="p" variant="subtitle2">{date}</Typography>
+                    <Box sx={Styles.date_background}>
+                        <Typography component="p" variant="subtitle2" align="center">{date}</Typography>
+                    </Box>
                 </Box>
                 
                 <ul>
@@ -105,10 +116,10 @@ export default function Next_Steps() {
             <Typography variant="body1" sx={Styles.title}>Suggested Next Steps</Typography>
             <Button variant="outlined" sx={Styles.plan_btn} size="small" endIcon={<AddIcon/>}>Create Plan</Button>
             <Box sx={Styles.unit_stack}>
-                <Unit title="Abcd" date="April" icon={<AssessmentIcon/>}  list={["a","b","c"]}/>
-                <Unit title="Defg" date="May" icon={<PersonIcon/>}  list={["d","e","f"]}/>
-                <Unit title="hijk" date="June" icon={<SelfImprovementIcon/>}  list={["h","i","j"]}/>
-                <Unit title="lmno" date="July" icon={<MonitorHeartIcon/>}  list={["l","m","n"]}/>
+                <Unit title="Diagnostic" date="May-June" icon={<AssessmentIcon/>}  list={["Repeat MRI in 3-6 months","Cognitive test recommended","Confirm markers via blood test"]}/>
+                <Unit title="Specialist" date="July" icon={<PersonIcon/>}  list={["Consult a neurologist(early risk detected)","Optional:sleep specialist review","Refer to mental health professional"]}/>
+                <Unit title="Lifestyle" date="Permanent" icon={<SelfImprovementIcon/>}  list={["Start brain-healthy diet","Try cognitive training apps","Increase aerobic activity"]}/>
+                <Unit title="Monitoring" date="" icon={<MonitorHeartIcon/>}  list={["Set re-scan reminder","Enable weekly memory checks","Activate real-time trend tracking for key biomarkers"]}/>
             </Box>    
         </Box>
     )
