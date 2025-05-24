@@ -62,19 +62,19 @@ function App() {
       <Next_Steps/>
 
       <Box sx={Styles.box1}>
-        <Index/>
+        <Index title="Neural Activity Index" num="82/100"/>
       </Box>
       
       <Box sx={Styles.box2}>
-        <Index/>
+        <Index title="Brain Symmetry Index" num="0.96"/>
       </Box>
       
       <Box sx={Styles.box3}>
-        <Index/>
+        <Index title="Hippocampal Volume" num="1.2 cm^3"/>
       </Box>
       
       <Box sx={Styles.box4}>
-        <Index/>
+        <Index title="Gray Matter Volume" num="715 cm^3"/>
       </Box>
     </Box>
   )
