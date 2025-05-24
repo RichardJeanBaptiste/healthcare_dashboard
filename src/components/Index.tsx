@@ -1,18 +1,15 @@
-import { useState, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import { Box, Typography } from "@mui/material";
 
 interface IndexProps {
   title : string,
-  //state: string,
+  status: string,
   num : string,  
   children?: ReactNode; // 'children' can be optional, hence the '?'
 }
 
 
-export default function Index({children , title, num} : IndexProps) {
-
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [a_state, setAState] = useState("Normal");
+export default function Index({children , title, num, status} : IndexProps) {
 
     const Styles = {
         root: {
@@ -24,6 +21,12 @@ export default function Index({children , title, num} : IndexProps) {
             position: 'absolute',
             top: '10%',
             left: '2%'
+        },
+        indicator: {
+            width: '10px',
+            height: '10px',
+            borderRadius: '20px',
+            backgroundColor: status == "Normal" ? "green" : "red"
         },
         status: {
             position: 'absolute',
@@ -44,8 +47,8 @@ export default function Index({children , title, num} : IndexProps) {
         <Box sx={Styles.root}>
             <Typography component="p" variant="body2" sx={Styles.title}>{title}</Typography>
             <Box sx={Styles.status}>
-                <Box sx={{ width: '20px', height: '20px', backgroundColor: a_state == "Normal" ? "green" : "red"}}></Box>
-                <Typography component="p" variant="body2">{a_state}</Typography>
+                <Box sx={Styles.indicator}></Box>
+                <Typography component="p" variant="body2">{status}</Typography>
             </Box>
 
             <Typography component="p" variant="body2" sx={Styles.num}>{num}</Typography>

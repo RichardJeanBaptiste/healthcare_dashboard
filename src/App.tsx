@@ -12,8 +12,8 @@ function App() {
       position: 'absolute',
       top: '67%',
       left: '2%',
-      width: '28%',
-      height: '19%',
+      width: '29%',
+      height: '25%',
       borderStyle: 'solid',
       borderWidth: '1px',
       borderColor: 'black',
@@ -22,9 +22,9 @@ function App() {
     box2: {
       position: 'absolute',
       top: '67%',
-      left: '31%',
-      width: '28%',
-      height: '19%',
+      left: '32.5%',
+      width: '29%',
+      height: '25%',
       borderStyle: 'solid',
       borderWidth: '1px',
       borderColor: 'black',
@@ -32,10 +32,10 @@ function App() {
     },
     box3: {
       position: 'absolute',
-      top: '88%',
+      top: '94.5%',
       left: '2%',
-      width: '28%',
-      height: '19%',
+      width: '29%',
+      height: '25%',
       borderStyle: 'solid',
       borderWidth: '1px',
       borderColor: 'black',
@@ -43,10 +43,10 @@ function App() {
     },
     box4: {
       position: 'absolute',
-      top: '88%',
-      left: '31%',
-      width: '28%',
-      height: '19%',
+      top: '94.5%',
+      left: '32.5%',
+      width: '29%',
+      height: '25%',
       borderStyle: 'solid',
       borderWidth: '1px',
       borderColor: 'black',
@@ -62,19 +62,19 @@ function App() {
       <Next_Steps/>
 
       <Box sx={Styles.box1}>
-        <Index title="Neural Activity Index" num="82/100"/>
+        <Index title="Neural Activity Index" num="82/100" status="Normal"/>
       </Box>
       
       <Box sx={Styles.box2}>
-        <Index title="Brain Symmetry Index" num="0.96"/>
+        <Index title="Brain Symmetry Index" num="0.96" status="Normal"/>
       </Box>
       
       <Box sx={Styles.box3}>
-        <Index title="Hippocampal Volume" num="1.2 cm^3"/>
+        <Index title="Hippocampal Volume" num="1.2 cm^3" status="Moderate"/>
       </Box>
       
       <Box sx={Styles.box4}>
-        <Index title="Gray Matter Volume" num="715 cm^3"/>
+        <Index title="Gray Matter Volume" num="715 cm^3" status="Normal"/>
       </Box>
     </Box>
   )
